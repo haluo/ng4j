@@ -66,6 +66,12 @@ myApp.config(['$stateProvider', '$urlRouterProvider', 'USER_ROLES', function ($s
             url: '/other/hehe',
             template: '<div class="page-content">hehe</div>'
         }
+    ).state('cars',
+        {
+            url: '/cars',
+            controller: 'carsCtrl',
+            templateUrl: 'tpls/cars.html'
+        }
     )
 }]);
 
