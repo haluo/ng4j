@@ -1,0 +1,16 @@
+<div class="page-content">
+<input ng-model="chartConfig.title.text">
+<button type="button" class="btn btn-xs btn-primary"  ng-click="addSeries()">Add Series</button>
+<button type="button" class="btn btn-xs btn-primary" ng-click="addPoints()">Add Points to Random Series</button>
+<button type="button" class="btn btn-xs btn-primary" ng-click="removeRandomSeries()">Remove Random Series</button>
+<button type="button" class="btn btn-xs btn-primary" ng-click="swapChartType()">Line/Bar</button>
+<div class="row">
+    <div class="col-md-4">
+    <highchart id="chart1" config="chartConfig"></highchart>
+    </div>
+    <div class="col-md-4">
+    <highchart id="chart2" config="chartConfig2"></highchart>
+    </div>
+</div>
+</div>
+

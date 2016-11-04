@@ -1,0 +1,5 @@
+<div class="page-content">
+    <span>home</span>
+    hi {{getCurrentUser().id}} !  <span ng-if="isAuthorized(userRoles.admin)">You're admin.</span>  <span ng-if="isAuthorized(userRoles.guest)">You're guest.</span>
+
+</div>
